@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx openspec --help:*)",
+      "Bash(npx openspec:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npm create:*)",
+      "Bash(npx:*)",
+      "Bash(npm run build:*)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)"
+    ]
+  }
+}
