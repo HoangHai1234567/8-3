@@ -25,7 +25,7 @@ export default function Home() {
           <FlowerParticles />
           <MusicPlayer />
 
-          <main className="relative z-20">
+          <main className="relative z-20 w-full min-w-0 overflow-x-hidden">
             <Header />
             <WishMessage />
             <PhotoGallery />
