@@ -14,18 +14,28 @@
   --font-body: 'Quicksand', sans-serif;
 }
 
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  color-scheme: light;
+}
+
 body {
   font-family: var(--font-body);
-  background-color: var(--color-pink-50);
-  color: var(--color-text-main);
+  background-color: #FFF0F5 !important;
+  color: #4A4A4A;
   overflow-x: hidden;
   min-height: 100vh;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3 {
