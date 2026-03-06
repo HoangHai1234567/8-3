@@ -14,32 +14,26 @@
   --font-body: 'Quicksand', sans-serif;
 }
 
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@layer base {
+  html {
+    color-scheme: light;
+  }
 
-html {
-  color-scheme: light;
-}
+  body {
+    font-family: var(--font-body);
+    background-color: #FFF0F5;
+    color: #4A4A4A;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
 
-body {
-  font-family: var(--font-body);
-  background-color: #FFF0F5 !important;
-  color: #4A4A4A;
-  overflow-x: hidden;
-  min-height: 100vh;
-}
+  #root {
+    width: 100%;
+  }
 
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3 {
-  font-family: var(--font-heading);
+  h1, h2, h3 {
+    font-family: var(--font-heading);
+  }
 }
 
 ::-webkit-scrollbar {
