@@ -26,7 +26,7 @@ export default function Header() {
   }, [])
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 relative">
+    <section className="w-full min-h-screen flex flex-col items-center justify-center text-center px-4 relative">
       <div className="mb-6">
         <span className="text-5xl md:text-7xl block mb-4">🌸</span>
       </div>

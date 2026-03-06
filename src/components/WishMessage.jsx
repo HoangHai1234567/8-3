@@ -48,20 +48,22 @@ function WishCard({ wish, index }) {
 
 export default function WishMessage() {
   return (
-    <section className="py-20 px-4 max-w-6xl mx-auto">
-      <ScrollReveal>
-        <h2
-          className="text-3xl md:text-5xl text-pink-500 text-center mb-12"
-          style={{ fontFamily: 'var(--font-heading)' }}
-        >
-          💌 Lời Chúc Yêu Thương
-        </h2>
-      </ScrollReveal>
+    <section className="w-full py-20 px-4">
+      <div className="max-w-6xl mx-auto">
+        <ScrollReveal>
+          <h2
+            className="text-3xl md:text-5xl text-pink-500 text-center mb-12"
+            style={{ fontFamily: 'var(--font-heading)' }}
+          >
+            💌 Lời Chúc Yêu Thương
+          </h2>
+        </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {wishes.map((wish, index) => (
-          <WishCard key={index} wish={wish} index={index} />
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {wishes.map((wish, index) => (
+            <WishCard key={index} wish={wish} index={index} />
+          ))}
+        </div>
       </div>
     </section>
   )
